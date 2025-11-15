@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple 3-Image Slider</title>
+  <link rel="stylesheet" href="/slider.css" />
+</head>
+<body>
+  <div class="slider" aria-roledescription="carousel" aria-label="Image Slider">
+    <button class="nav prev" aria-label="Previous slide" id="prevBtn">&#10094;</button>
+    <div class="slides" id="slides" role="group">
+      <div class="slide" data-index="0" aria-roledescription="slide" aria-label="1 of 3">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop" alt="Mountain landscape" />
+        <div class="caption">Mountain sunrise</div>
+      </div>
+      <div class="slide" data-index="1" aria-roledescription="slide" aria-label="2 of 3">
+        <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?q=80&w=1600&auto=format&fit=crop" alt="Forest path" />
+        <div class="caption">Forest path</div>
+      </div>
+      <div class="slide" data-index="2" aria-roledescription="slide" aria-label="3 of 3">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1600&auto=format&fit=crop" alt="Ocean waves" />
+        <div class="caption">Ocean waves</div>
+      </div>
+    </div>
+    <button class="nav next" aria-label="Next slide" id="nextBtn">&#10095;</button>
+
+    <div class="dots" id="dots" role="tablist" aria-label="Slide dots"></div>
+  </div>
+
+  <script type="module" src="/slider.js"></script>
+</body>
+</html>
